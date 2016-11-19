@@ -22,7 +22,6 @@ class Starting {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            System.out.println(question.equals("E"));
             if(!question.equals("e") || !question.equals("E")) {
                 int num;
                 try {
