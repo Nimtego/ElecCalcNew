@@ -5,13 +5,13 @@ import ElectricCalcException.NotCorectEnteringException;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * Created by nimtego_loc on 18.11.2016.
  */
 public class UserChoice {
-    public static boolean yesOrNot() {
+    public static boolean
+    yesOrNot() {
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("(y or n)");
         String question = null;

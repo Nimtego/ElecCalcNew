@@ -1,7 +1,7 @@
 package Operation;
 
-import Operation.ListOperation.GraundConection;
-import Operation.ListOperation.LightCalc;
+import Operation.ListOperation.GraundConection.GraundConection;
+import Operation.ListOperation.LightCalc.LightCalc;
 
 import java.util.ArrayList;
 
@@ -15,7 +15,7 @@ public class ListCalculationOperation {
 // creatListOfOperation(new LightCalc());
 // }
     public static ArrayList<ObjMenu> getMenu() {
-        creatListOfOperation(new LightCalc(), new GraundConection());
+        creatListOfOperation(new LightCalc(), new GraundConection(), new LightCalc("Other", "F"));
         return menu;
     }
     private static void creatListOfOperation(ObjMenu... arrOperation) {
