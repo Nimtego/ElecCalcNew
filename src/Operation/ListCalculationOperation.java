@@ -2,6 +2,7 @@ package Operation;
 
 import Operation.ListOperation.GraundConection.GraundConection;
 import Operation.ListOperation.LightCalc.LightCalc;
+import Operation.ListOperation.PowerCalculator.PowerCalc;
 
 import java.util.ArrayList;
 
@@ -12,7 +13,9 @@ public class ListCalculationOperation {
     private static final ArrayList<ObjOperation> menu = new ArrayList<>();
 
     public ListCalculationOperation() {
-        creatListOfOperation(new LightCalc(), new GraundConection(), new LightCalc("Other", "F"));
+        creatListOfOperation(new LightCalc(),
+                             new GraundConection(),
+                             new PowerCalc());
     }
     public ArrayList<ObjOperation> getMenu() {return menu;}
     private void creatListOfOperation(ObjOperation ... arrOperation) {

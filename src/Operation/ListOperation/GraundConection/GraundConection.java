@@ -8,7 +8,7 @@ import Operation.ObjOperation;
 public class GraundConection extends ObjOperation {
 
     public GraundConection() {
-        super("Graunde", "Test 2");
+        super("Graunde", "Test2");
     }
 
     @Override

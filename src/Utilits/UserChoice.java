@@ -58,4 +58,28 @@ public class UserChoice {
         }
         while(true);
     }
+    public static int oneIntOfTwo(final int first, final int second) {
+        BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Entering " +first +" or " +second);
+        String choice = null;
+        int numberTmp = 0;
+        do {
+            try {
+                choice = read.readLine();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                if (choice != null) {
+                    numberTmp = Integer.parseInt(choice);
+                }
+                if (!(numberTmp == first || numberTmp == second))
+                    continue;
+                return numberTmp;
+            } catch (NumberFormatException e) {
+                System.out.println("Not number");
+            }
+        }
+        while(true);
+    }
 }
