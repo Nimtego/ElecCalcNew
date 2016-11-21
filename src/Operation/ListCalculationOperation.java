@@ -15,7 +15,7 @@ public class ListCalculationOperation {
         creatListOfOperation(new LightCalc(), new GraundConection(), new LightCalc("Other", "F"));
     }
     public ArrayList<ObjOperation> getMenu() {return menu;}
-    private void creatListOfOperation(ObjOperation... arrOperation) {
+    private void creatListOfOperation(ObjOperation ... arrOperation) {
         for (ObjOperation operation : arrOperation) {
             menu.add(0, operation);
         }

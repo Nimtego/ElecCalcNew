@@ -48,5 +48,6 @@ public class LightCalc extends ObjOperation {
     @Override
     public void menuAction() {
         System.out.println("--- " +getName() +" ---");
+        LogicLightCalc.dataCollection(this);
     }
 }
