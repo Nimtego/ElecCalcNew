@@ -9,21 +9,18 @@ import java.util.ArrayList;
  * Created by nimtego_loc on 18.11.2016.
  */
 public class ListCalculationOperation {
-    private static final ArrayList<ObjMenu> menu = new ArrayList<ObjMenu>();
+    private static final ArrayList<ObjOperation> menu = new ArrayList<>();
 
-    // ListCalculationOperation() {
-// creatListOfOperation(new LightCalc());
-// }
-    public static ArrayList<ObjMenu> getMenu() {
+    public ListCalculationOperation() {
         creatListOfOperation(new LightCalc(), new GraundConection(), new LightCalc("Other", "F"));
-        return menu;
     }
-    private static void creatListOfOperation(ObjMenu... arrOperation) {
-        for (ObjMenu operation : arrOperation) {
+    public ArrayList<ObjOperation> getMenu() {return menu;}
+    private void creatListOfOperation(ObjOperation... arrOperation) {
+        for (ObjOperation operation : arrOperation) {
             menu.add(0, operation);
         }
     }
-    public static ObjMenu getObjMenuByNumber(int number) {
+    public ObjOperation getObjMenuByNumber(int number) throws IndexOutOfBoundsException {
         return menu.get(number);
     }
 }

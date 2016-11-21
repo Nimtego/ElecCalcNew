@@ -1,11 +1,11 @@
 package Operation.ListOperation.GraundConection;
 
-import Operation.ObjMenu;
+import Operation.ObjOperation;
 
 /**
  * Created by nimtego_loc on 18.11.2016.
  */
-public class GraundConection extends ObjMenu {
+public class GraundConection extends ObjOperation {
 
     public GraundConection() {
         super("Graunde", "Test 2");

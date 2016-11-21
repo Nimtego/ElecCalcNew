@@ -1,11 +1,11 @@
 package Operation.ListOperation.LightCalc;
 
-import Operation.ObjMenu;
+import Operation.ObjOperation;
 
 /**
  * Created by nimtego_loc on 18.11.2016.
  */
-public class LightCalc extends ObjMenu {
+public class LightCalc extends ObjOperation {
     private int lightFlow;
     private int lux;
     private int area;

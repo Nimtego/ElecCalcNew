@@ -3,11 +3,11 @@ import  ProgrammInterface.IAction;
 /**
  * Created by nimtego_loc on 18.11.2016.
  */
-public abstract class ObjMenu implements IAction {
+public abstract class ObjOperation implements IAction {
     private String name;
     private String type;
 
-    public ObjMenu(final String name, final String type) {
+    public ObjOperation(final String name, final String type) {
         this.name = name;
         this.type = type;
     }
